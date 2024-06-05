@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title="Display Picklist Value">
+        <template lwc:if={picklistValues.data}>
+            <lightning-combobox
+                name="Picklist Value"
+                label="Status"
+                placeholder="Choose Picklist Value"
+                value={value}
+                onchange={handleChange}
+                options={picklistValues.data.values}
+            ></lightning-combobox>
+            <p>Choosen Value: {value}</p>
+
+        </template>
+    </lightning-card>
+</template>

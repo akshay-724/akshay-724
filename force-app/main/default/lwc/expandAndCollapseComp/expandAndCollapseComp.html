@@ -1,0 +1,43 @@
+<template>
+    <div class="slds-card">
+        <div class="slds-card__header slds-grid" onmousedown={toggleSection1}>
+            <h3 class="slds-text-heading_small">Section 1</h3>
+            <lightning-icon if:true={section1Expanded} icon-name="utility:chevronup" size="small"></lightning-icon>
+            <lightning-icon if:false={section1Expanded} icon-name="utility:chevrondown" size="small"></lightning-icon>
+        </div>
+        <template if:true={section1Expanded}>
+            <!-- Content for Section 1 -->
+            <div class="slds-card__body">
+                Field Value for Section 1: {section1Value}
+            </div>
+        </template>
+    </div>
+
+    <div class="slds-card">
+        <div class="slds-card__header slds-grid" onmousedown={toggleSection2}>
+            <h3 class="slds-text-heading_small">Section 2</h3>
+            <lightning-icon if:true={section1Expanded} icon-name="utility:chevronup" size="small"></lightning-icon>
+            <lightning-icon if:false={section1Expanded} icon-name="utility:chevrondown" size="small"></lightning-icon>
+        </div>
+        <template if:true={section2Expanded}>
+            <!-- Content for Section 2 -->
+            <div class="slds-card__body">
+                Field Value for Section 2: {section2Value}
+            </div>
+        </template>
+    </div>
+
+    <div class="slds-card">
+        <div class="slds-card__header slds-grid" onmousedown={toggleSection3}>
+            <h3 class="slds-text-heading_small">Section 3</h3>
+            <lightning-icon if:true={section1Expanded} icon-name="utility:chevronup" size="small"></lightning-icon>
+            <lightning-icon if:false={section1Expanded} icon-name="utility:chevrondown" size="small"></lightning-icon>
+        </div>
+        <template if:true={section3Expanded}>
+            <!-- Content for Section 3 -->
+            <div class="slds-card__body">
+                Field Value for Section 3: {section3Value}
+            </div>
+        </template>
+    </div>
+</template>
