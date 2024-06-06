@@ -15,6 +15,6 @@ export default class DisplayPicklistValue extends LightningElement {
 
     handleChange(event){
         this.value = event.target.value;
-        console.log('picklist values!!! ', this.value);
+        console.log('picklist values!!! ', this.value);//check
     }
 }
